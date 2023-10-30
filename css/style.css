@@ -1,0 +1,162 @@
+/* line 1, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: sans-serif;
+}
+
+/* line 8, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+body {
+  background: linear-gradient(45deg, #f06291, #fffde7);
+}
+
+/* line 12, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* line 21, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #bb8282;
+  background-color: #fff;
+}
+
+/* line 30, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator #display {
+  color: #0a1e23;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+/* line 42, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator #equal {
+  height: 130px;
+}
+
+/* line 46, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator #clear {
+  background-color: #ffd5d8;
+  color: #fc4552;
+}
+
+/* line 52, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator .btn-number {
+  background-color: #AEDEFC;
+  color: #000;
+}
+
+/* line 57, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator .btn-operator {
+  background-color: #FFDFDF;
+  color: #F875AA;
+}
+
+/* line 63, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator .btn-equal {
+  background-color: #45FFCA;
+  color: grey;
+}
+
+/* line 71, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark {
+  background-color: #445069;
+}
+
+/* line 74, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark #display {
+  color: #f8fafb;
+}
+
+/* line 78, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark #clear {
+  background-color: #252B48;
+  color: white;
+}
+
+/* line 83, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark .btn-number {
+  background-color: #5B9A8B;
+  color: darkslategray;
+  font-weight: 600;
+}
+
+/* line 89, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark .btn-operator {
+  background-color: #F7E987;
+  color: #461959;
+}
+
+/* line 94, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.calculator.dark .btn-equal {
+  background-color: #EF6262;
+  color: white;
+}
+
+/* line 103, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* line 111, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.theme-toggler::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+/* line 125, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.theme-toggler.active {
+  color: #333;
+}
+
+/* line 128, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+
+/* line 134, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* line 144, ../../../OneDrive/Documentos/javascript/Ejercicios/Ejercicio 01/sass/style.scss */
+button:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
